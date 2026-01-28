@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Your Shoot | Mera Shoot Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo" class="logo" />
+    <h1>Book Your Shoot Appointment</h1>
+    <p class="tagline">Let’s capture your moments in style!</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#packages">Packages</a>
+    <a href="index.html#videos">Videos</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+
+  <section class="appointment" id="appointment">
+    <h2>Fill Your Details</h2>
+
+    <!-- Formspree Form -->
+    <form 
+      action="https://formspree.io/f/mjgrbzyb" 
+      method="POST"
+    >
+      <input type="text" name="name" placeholder="Your Full Name" required />
+
+      <input type="email" name="email" placeholder="Your Email Address" required />
+
+      <input type="tel" name="phone" placeholder="Your Phone Number" required />
+
+      <input type="text" name="address" placeholder="Your Address" required />
+
+      <select name="shoot_type" required>
+        <option value="">Select Shoot Type</option>
+        <option value="Basic Shoot – ₹2,000">Basic Shoot – ₹2,000</option>
+        <option value="Premium Shoot – ₹5,000">Premium Shoot – ₹5,000</option>
+        <option value="Wedding Shoot – ₹25,000">Wedding Shoot – ₹25,000</option>
+        <option value="Baby Shoot – ₹4,000">Baby Shoot – ₹4,000</option>
+      </select>
+
+      <input type="date" name="date" required />
+
+      <textarea name="message" placeholder="Any special request?" rows="4"></textarea>
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mera Shoot Studio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
